@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Manage Keys</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="ManageKeysModal" class="popup-overlay">
+            <!-- Key Management Section -->
+            <div class="popup">
+                <h2>Manage Key</h2>
+                <button onclick="ManageKeys('remove')">Remove</button>
+                <button onclick="ManageKeys('edit')">Edit</button>
+                <button onclick="ManageKeys('reassign')">Reassign</button>
+                <span class="close-popup-btn" onclick="CloseKeyModel()">&times;</span>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <h1>Key Dashboard</h1>
+            <div id="tabs">
+                <button onclick="window.location.href = 'UserManagement.html'" class="tab-button">Manage Users</button>
+            </div>
+        </div>
+
+        <div id="UsersList" class="tab">
+            <h2>Generate Key</h2>
+            <div id="tabs">
+                <form id="generateForm" onsubmit="GenerateKey(event)">
+                    <label for="duration">Duration:</label>
+                    <select id="duration" name="duration" class="tab-dropdown">
+                        <option value="1 day">1 day</option>
+                        <option value="3 days">3 days</option>
+                        <option value="1 week">1 week</option>
+                        <option value="1 month">1 month</option>
+                        <option value="3 months">3 months</option>
+                        <option value="Lifetime">Lifetime</option>
+                    </select><br>
+                    <label for="planType">Plan Type:</label>
+                    <select id="planType" name="planType" class="tab-dropdown">
+                        <option value="Basic">Basic ($5/Month)</option>
+                        <option value="Standard">VIP ($10/Month)</option>
+                        <option value="Pro">Pro ($20/Month)</option>
+                    </select><br>
+                    <button type="submit" class="tab-button">Generate Key</button>
+                </form>
+
+                <table id="generatedKeys" class="key-table">
+                    <thead>
+                        <tr>
+                            <th>Key</th>
+                            <th>Duration</th>
+                            <th>Plan Type</th>
+                            <th>Manage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table body content will be dynamically populated -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden input to store key data -->
+    <input type="hidden" id="keysData" name="keysData">
+
+    <!-- JavaScript file inclusion -->
+    <script src="script.js"></script>
+</body>
+</html>

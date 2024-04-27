@@ -1,0 +1,117 @@
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.dashboard {
+    background-color: #36393f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #444;
+}
+
+.key-management {
+    background-color: #36393f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.key-management h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.key-table button {
+    margin: 5px;
+}
+
+.key-table td {
+    white-space: nowrap;
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 200px;
+}
+
+option {
+    background-color: #fff;
+    color: #333;
+}
+
+button {
+    background-color: #5909ed;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4707a8;
+}
+
+.copy-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+.tab-button {
+    display: inline-block;
+    margin: 5px 0;
+}

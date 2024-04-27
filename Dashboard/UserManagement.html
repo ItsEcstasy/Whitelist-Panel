@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Manage Users</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <h1> User Dashboard</h1>
+            <div id="tabs">
+                <button onclick="window.location.href = 'KeyManagement.html'" class="tab-button">Manage Keys</button>
+            </div>
+        </div>
+        <div id="UsersList" class="tab">
+                <h2>Tabs</h2>
+            <div id="tabs">
+            
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Plan Type</th>
+                            <th>Country</th>
+                            <th>Roles</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function manageUser(username, action) {
+            switch(action) {
+                case 'blacklist':
+                    console.log(`Blacklisting user: ${username}`);
+                    break;
+                case 'edit':
+                    console.log(`Editing user: ${username}`);
+                    break;
+                // others
+                default:
+                    console.log(`Unknown action for user: ${username}`);
+            }
+        }
+    </script>
+</body>
+</html>
