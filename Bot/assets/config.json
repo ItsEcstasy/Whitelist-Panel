@@ -1,16 +1,16 @@
 {
-    "token": "MTIzMjAwOTQ3MTM0MjE1MzkxMg.GRjwJ8.uzudUZXFKV0v41egA1JMWanPnAYB6oPLmXKKJc",
+    "token": "Token-Here",
     "prefix": "!",
 
     "brand": "Management",
     "remove_cmds": true,
-    "bot_id": "1232009471342153912",
-    "guild_id":  "1231347705817858068",
+    "bot_id": "Bot-App-ID-Here",
+    "guild_id":  "Discord-Server-ID-Here",
     
     "authenticated_ids": [
-        "1055337846657007648",
-        "884895165670641756",
-        "851827069284778054"
+        "Discord-User-ID-Here",
+        "",
+        ""
     ],
 
     "payment_methods": {
