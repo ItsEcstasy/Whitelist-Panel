@@ -1,0 +1,48 @@
+Ideas:
+- create / lookup admins
+- manage users
+- manage admin access
+- manage keys
+- generate keys
+- 
+
+
+
+ 
+figure out why slash cmds are duplicated
+ 
+change cmd not found message
+convert prefix poll cmd to a slash
+convert prefix gives/remove role cmds to slash
+
+
+Dash Ideas:
+## management actions
+-blacklist
+- unblacklist
+- unlink
+- revoke key (unlinks from acc)
+
+## key management:
+- generate key
+- key info
+
+## other features:
+ view key duration
+- redeeming date
+- expiry date
+- plan type
+
+
+
+
+
+
+
+
+
+feature ideas:
+- add/remove slash upon starting/stopping bot (should prevent waiting for commands to sync and remove slash commands when bot is not running)
+
+
+
